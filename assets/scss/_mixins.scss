@@ -1,0 +1,24 @@
+
+/**
+ * Icofont is used ( https://icofont.com/ )
+ *
+ * @include icon-font("\ef99");
+ */
+@mixin icon-font($fontcode: false) {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    @if $fontcode {
+        content: $fontcode;
+    }
+}
