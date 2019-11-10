@@ -1,0 +1,59 @@
+/**
+ * Ass styles for comments template in style.css
+ */
+
+.comments-area { overflow: hidden; }
+
+.comments-area .title-wrap { overflow: hidden; text-align: center; margin-bottom: 30px; }
+
+.comments-area .comments-title { text-transform: uppercase; letter-spacing: 1px; position: relative; display: inline-block; }
+
+.comments-area .comments-title::before, .comments-area .comments-title::after { content: ''; position: absolute; top: 50%; border-bottom: 1px solid #cdceef; width: 700px; }
+
+.comments-area .comments-title::before { right: 100%; margin-right: 30px; }
+
+.comments-area .comments-title::after { left: 100%; margin-left: 30px; }
+
+.comments-area .author-name { text-transform: capitalize; color: #2d3290; margin-bottom: 0px; }
+
+.comments-area .comment-metadata { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; color: #585ecb; font-size: 14px; }
+
+.comments-area .comment-metadata a { color: #585ecb; }
+
+.comments-area .comment-metadata .comment-edit-link { text-decoration: none; }
+
+.comments-area .comment-metadata .comment-edit-link::before { font-family: 'IcoFont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; white-space: nowrap; word-wrap: normal; direction: ltr; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-feature-settings: "liga"; -webkit-font-smoothing: antialiased; content: ""; margin-right: 5px; }
+
+.comments-area .comment-meta { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 10px; }
+
+.comments-area footer.comment-meta { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 10px; margin-bottom: 0; }
+
+.comments-area footer .comment-reply-link { text-decoration: none; }
+
+.comments-area footer .comment-reply-link::before { font-family: 'IcoFont' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; white-space: nowrap; word-wrap: normal; direction: ltr; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-feature-settings: "liga"; -webkit-font-smoothing: antialiased; content: ""; margin-right: 5px; }
+
+.comments-area footer .comment-awaiting-moderation { background-color: #cdceef; color: #585ecb; }
+
+.comments-area .comment-author-img { display: none; }
+
+.comments-area .comment-author-img .avatar { width: 80px; height: auto; border: 3px solid #fff; -webkit-box-shadow: 2px 2px 3px #cdceef; box-shadow: 2px 2px 3px #cdceef; /* Safari 3-4, iOS 1-3.2, Android 1.6- */ /* Firefox 1-3.6 */ /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */ border-radius: 100%; -webkit-transition: border 0.5s ease, box-shadow 0.5s ease; -webkit-transition: border 0.5s ease, -webkit-box-shadow 0.5s ease; transition: border 0.5s ease, -webkit-box-shadow 0.5s ease; transition: border 0.5s ease, box-shadow 0.5s ease; transition: border 0.5s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease; }
+
+.comments-area .comment-author-img .avatar:hover { border-width: 1px; -webkit-box-shadow: 4px 4px 6px #cdceef; box-shadow: 4px 4px 6px #cdceef; }
+
+.comments-area .comment-body { background-color: transparent; padding: 0 0 25px; margin-bottom: 25px; border-bottom: 1px solid #cdceef; }
+
+.comments-area .children { list-style: none; margin: 0 0 0 30px; padding: 0; }
+
+.comments-area .comment-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; list-style: none; margin: 0; padding: 0; }
+
+.comments-area .comment-input-wrap .comment-form-author, .comments-area .comment-input-wrap .comment-form-email { margin-bottom: 15px; }
+
+.comments-area .comment-form-cookies-consent { display: block; position: relative; padding-left: 20px; }
+
+.comments-area .comment-form-cookies-consent input { position: absolute; top: 3px; left: 1px; }
+
+.comments-area .comment-form-cookies-consent label { margin-bottom: 0; }
+
+@media (min-width: 576px) { .comments-area .comment-input-wrap .comment-form-author, .comments-area .comment-input-wrap .comment-form-email { margin-bottom: 0; } }
+
+@media (min-width: 768px) { .comments-area .comment-author-img { display: initial; } }
